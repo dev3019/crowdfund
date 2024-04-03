@@ -1,0 +1,18 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+crowdfund = "4MvzLJ6P7SQDfFzPQGrPJMav6RxXojSM5Da4CPnaFmMN"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "./keypair.json"
+
+[scripts]
+test = "yarn run mocha -t 1000000 tests/"
